@@ -1,0 +1,1 @@
+export { Registro } from "./Login"
