@@ -9,11 +9,11 @@ nav a.active{
     font-weight: bolder;
 }
 
-.dropdowm a {
+.dropdown a{
     color:black;
     display: block;
 }
 
-.dropdowm div {
+.dropdown div{
     width: 230px;
 }

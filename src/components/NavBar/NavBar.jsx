@@ -43,7 +43,7 @@ export const NavBar = () => {
                   </>
                   )}
                   {localStorage.getItem("usuario") && ( 
-                    <NavDropdown title="Cursos" id="basic-nav-dropdown"> {/*ACA SE HACE EL SELECT CON BOOSTRAP , Y LAS OPCIONES DEL MISMO SELECT SE HACEN CON LOGICA PARA QUE VARIEN SEGUN EL CURSO DE LA BASE DE DATOS*/}
+                    <NavDropdown title="Cursos" id="dropdown"> {/*ACA SE HACE EL SELECT CON BOOSTRAP , Y LAS OPCIONES DEL MISMO SELECT SE HACEN CON LOGICA PARA QUE VARIEN SEGUN EL CURSO DE LA BASE DE DATOS*/}
                       {cursos?.map(curso => (
                         <NavLink key={curso.id} to={`/curso/${curso.id}`}>
                           {curso.title}
