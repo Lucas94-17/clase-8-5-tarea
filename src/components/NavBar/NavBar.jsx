@@ -33,7 +33,7 @@ export const NavBar = () => {
     return(
       <Navbar bg="primary" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Academy</Navbar.Brand> {/*ACA ESTA EL NAVBAR COPIADO DE REACT*/}
+            <Navbar.Brand href="/">Academy</Navbar.Brand> {/*ACA ESTA EL NAVBAR COPIADO DE REACT*/}
               <Nav className="me-auto">
                 <NavLink to="/">Home</NavLink> {/* CAMBIAMOS EL NAV.LINK DE BOOSTRAP POR NAVLINK*/}
                   {!localStorage.getItem("usuario") && (
@@ -42,6 +42,7 @@ export const NavBar = () => {
                     <NavLink to="/registro">Register</NavLink>
                   </>
                   )}
+                  <NavLink to="/Cursos">Cursos</NavLink>
                   {localStorage.getItem("usuario") && ( 
                     <NavDropdown title="Cursos" id="dropdown"> {/*ACA SE HACE EL SELECT CON BOOSTRAP , Y LAS OPCIONES DEL MISMO SELECT SE HACEN CON LOGICA PARA QUE VARIEN SEGUN EL CURSO DE LA BASE DE DATOS*/}
                       {cursos?.map(curso => (
