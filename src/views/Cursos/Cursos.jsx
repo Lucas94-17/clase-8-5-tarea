@@ -11,5 +11,5 @@ import { useNavigate } from "react-router-dom"; //importamos useNavigate
 
 //ACA ARMO EL LOGIN , LA FUNCION Y LO QUE TENGA ADENTRO 
 export const Cursos = () => {
-    return <div> Patitos xd</div>
+    return <div> Patitos</div>
 }
